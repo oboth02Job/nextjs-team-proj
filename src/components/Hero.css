@@ -1,0 +1,32 @@
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+p {
+    max-width: 600;
+    margin: 20px auto;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px
+}
+
+.primary-btn {
+    background-color: #8B5E3C;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.secondary-btn {
+    border: 2px solid #8B5E3C;
+    color: #8B5E3C;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+}

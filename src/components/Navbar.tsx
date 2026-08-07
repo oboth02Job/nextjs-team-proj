@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "./Navbar.css"
 
 const links = [
     { name: "Home", href: "/" },
@@ -11,21 +12,20 @@ function Navbar() {
 
     return (
         <nav>
-            <h1>Handcrafted Haven</h1>
+            <p>Handcrafted Haven</p>
             <ul>
-                <li>
-                    <Link href="/">Home</Link>
+                {links.map((link) => (
+                    <li key={link.href}>
+                        <Link href={link.href}>{link.name}</Link>
                     </li>
-                <li>
-                    <Link href="/products">Products</Link>
-                    </li>
-                <li>
-                    <Link href="/categories">Categories</Link>
-                    </li>
-                <li>
-                    <Link href="/sellers">Sellers</Link>
-                    </li>
+                  
+                ))}
             </ul>
+
+            <div>
+                <Link href="/login">Log In</Link>
+                <Link href="/register">Register</Link>
+            </div>
        </nav>
    )
 }

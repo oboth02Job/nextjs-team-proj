@@ -1,0 +1,12 @@
+.category-card {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-card:hover {
+    transform: translateY(-5px)
+}
