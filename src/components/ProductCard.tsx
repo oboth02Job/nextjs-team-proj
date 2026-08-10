@@ -1,3 +1,5 @@
+import "./ProductCard.css"
+
 type ProductsCardProps = {
     name: string;
     price: string;
@@ -9,7 +11,7 @@ type ProductsCardProps = {
 function ProductsCard({ name, price, category, image }: ProductsCardProps) {
 
     return (
-        <article>
+        <article className="product-card">
             <img src={image} alt={name} />
 
             <h3>{name}</h3>

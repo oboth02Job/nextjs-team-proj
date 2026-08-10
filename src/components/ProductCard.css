@@ -1,0 +1,22 @@
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-botton: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit:cover
+}
+
+.product-card h3, 
+.product-card p {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.product-card p:last-child {
+    font-weight: bold;
+}
