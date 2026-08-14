@@ -1,0 +1,12 @@
+.seller-products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .seller-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

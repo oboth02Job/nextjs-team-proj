@@ -3,6 +3,8 @@
     border-radius: 10px;
     overflow: hidden;
     padding-botton: 20px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-card img {

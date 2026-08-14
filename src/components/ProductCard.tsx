@@ -1,17 +1,18 @@
 import "./ProductCard.css"
+import Link from "next/link"
 
 type ProductsCardProps = {
     name: string;
     price: string;
     category: string;
     image: string;
-    
+    id: string;
 }
 
-function ProductsCard({ name, price, category, image }: ProductsCardProps) {
+function ProductsCard({ id, name, price, category, image }: ProductsCardProps) {
 
     return (
-        <article className="product-card">
+        <Link href={`/products/${id}`} className="product-card">
             <img src={image} alt={name} />
 
             <h3>{name}</h3>
@@ -19,7 +20,7 @@ function ProductsCard({ name, price, category, image }: ProductsCardProps) {
             <p>{category}</p>
 
             <p>{price}</p>
-        </article>
+        </Link>
     )
 }
 
