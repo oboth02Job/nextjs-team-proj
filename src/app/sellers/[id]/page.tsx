@@ -1,4 +1,4 @@
-import { products } from "@/data/products";
+import { getProductsBySellerId } from "@/services/productService";
 import ProductCard from "@/components/ProductCard"
 import "./SellerProfile.css"
 
@@ -9,9 +9,7 @@ export default async function SellerProfilePage({
 }) {
   const { id } = await params;
 
-  const sellerProducts = products.filter(
-    (product) => product.sellerId === id
-  );
+  const sellerProducts = getProductsBySellerId(id)
 
   return (
     <main>

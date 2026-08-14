@@ -1,4 +1,4 @@
-import { products } from "@/data/products"
+import { getProductById } from "@/services/productService"
 import { notFound } from "next/navigation"
 import "./ProductsDetail.css"
 import Link from "next/link"
@@ -10,7 +10,7 @@ export default async function ProductDetailsPage({
 }) {
  
     const { id } = await params;
-    const product = products.find((product) => product.id === id)
+    const product = getProductById(id)
     if (!product) {
         notFound();
     }
